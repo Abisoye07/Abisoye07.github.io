@@ -1,0 +1,442 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisoye Oyefeso | AWS Cloud & DevOps Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;Abisoye<span>.dev/&gt;</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link btn-nav">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="pulsing-dot"></span> Available for Cloud & DevOps Opportunities
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Abisoye Oyefeso</span></h1>
+                <h2 class="hero-subtitle">AWS Cloud & DevOps Engineer</h2>
+                <p class="hero-tagline">
+                    Architecting secure, scalable cloud infrastructure and automating CI/CD pipelines to drive high-availability operations.
+                </p>
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i> Orange, NJ
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/abisoyeoyefeso" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Abisoye07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">bash - devops-env</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> terraform init && terraform apply</p>
+                        <p class="terminal-success">✔ AWS VPC & EKS Cluster Provisioned</p>
+                        <p><span class="prompt">$</span> kubectl get pods -n production</p>
+                        <p class="terminal-info">STATUS: 15/15 Running | Uptime: 99.9%</p>
+                        <p><span class="prompt">$</span> git push origin main</p>
+                        <p class="terminal-accent">🚀 GitHub Actions Pipeline Triggered...</p>
+                        <p class="terminal-success">✔ Build & Security Scan Passed</p>
+                        <p class="terminal-success">✔ Deployed to AWS Multi-AZ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">
+                        AWS Cloud / DevOps Engineer with hands-on experience in cloud infrastructure, Linux system administration, networking, CI/CD, troubleshooting, and automation.
+                    </p>
+                    <p>
+                        I specialize in supporting cloud environments, automating deployments, monitoring systems, and proactively resolving infrastructure bottlenecks. I have proven expertise in provisioning multi-AZ AWS environments, orchestrating containerized microservices, and implementing strict IAM and security compliance protocols (PCI-DSS/SOX).
+                    </p>
+                    <p>
+                        Currently expanding my advanced cloud architectural skills through Per Scholas (AWS re/Start Program), I am dedicated to continuously delivering high system reliability, security, and operational efficiency.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <h4>AWS Expertise</h4>
+                                <p>Multi-AZ VPCs, EKS, EC2, IAM, Lambda</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code-branch"></i>
+                            <div>
+                                <h4>CI/CD & Automation</h4>
+                                <p>GitHub Actions, Jenkins, Terraform, Ansible</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>System Admin</h4>
+                                <p>Linux (RHEL, Ubuntu, Amazon Linux), Bash, Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Education & Bootcamps</h3>
+                    <div class="education-timeline">
+                        <div class="edu-card">
+                            <span class="edu-date">Aug 2026 - Dec 2026</span>
+                            <h4 class="edu-title">AWS re/Start Program</h4>
+                            <p class="edu-institution">Per Scholas</p>
+                            <p class="edu-desc">Intensive 15-week bootcamp gaining 400+ hours of hands-on experience with core AWS services and architecture.</p>
+                        </div>
+                        <div class="edu-card">
+                            <span class="edu-date">Oct 2022</span>
+                            <h4 class="edu-title">DevOps Boot Camp Training</h4>
+                            <p class="edu-institution">DAREY.IO</p>
+                            <p class="edu-desc">Gained 6+ months of intensive practical experience with AWS Cloud services and DevOps methodologies.</p>
+                        </div>
+                        <div class="edu-card">
+                            <span class="edu-date">Graduated</span>
+                            <h4 class="edu-title">B.Sc. in Computer Science</h4>
+                            <p class="edu-institution">Lagos State University — Lagos, Nigeria</p>
+                        </div>
+                        <div class="edu-card">
+                            <span class="edu-date">Graduated</span>
+                            <h4 class="edu-title">N.C.E. Chemistry / Geography</h4>
+                            <p class="edu-institution">Tai Solarin College of Education — Ijebu Ode, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+            <p class="section-subtitle">Comprehensive toolkit for cloud infrastructure, automation, and DevOps practices.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fab fa-aws"></i>
+                        <h3>Cloud & AWS</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">AWS</span>
+                        <span class="tag">EC2</span>
+                        <span class="tag">VPC</span>
+                        <span class="tag">IAM</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">EBS</span>
+                        <span class="tag">RDS</span>
+                        <span class="tag">Route 53</span>
+                        <span class="tag">ALB/ELB</span>
+                        <span class="tag">NLB</span>
+                        <span class="tag">Auto Scaling</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">CloudTrail</span>
+                        <span class="tag">Lambda</span>
+                        <span class="tag">EKS</span>
+                        <span class="tag">ECR</span>
+                        <span class="tag">ECS</span>
+                        <span class="tag">API Gateway</span>
+                        <span class="tag">SNS</span>
+                        <span class="tag">SQS</span>
+                        <span class="tag">CloudFormation</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">GCP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking & Security</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">VPC & Subnets</span>
+                        <span class="tag">Route Tables</span>
+                        <span class="tag">Internet Gateway</span>
+                        <span class="tag">NAT Gateway</span>
+                        <span class="tag">Security Groups</span>
+                        <span class="tag">NACLs</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">IAM Policies</span>
+                        <span class="tag">Load Balancing</span>
+                        <span class="tag">PCI-DSS / SOX</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-infinity"></i>
+                        <h3>CI/CD & IaC</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS CloudFormation</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">GitLab CI/CD</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">Chef</span>
+                        <span class="tag">Puppet</span>
+                        <span class="tag">Argo CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fab fa-docker"></i>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Amazon EKS</span>
+                        <span class="tag">Amazon ECR</span>
+                        <span class="tag">Amazon ECS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Monitoring & Observability</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">AWS CloudWatch</span>
+                        <span class="tag">CloudTrail</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Splunk</span>
+                        <span class="tag">Datadog</span>
+                        <span class="tag">Dynatrace</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Linux, Scripting & Tools</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Amazon Linux</span>
+                        <span class="tag">RHEL</span>
+                        <span class="tag">CentOS</span>
+                        <span class="tag">Ubuntu</span>
+                        <span class="tag">Bash / Shell</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">SonarQube</span>
+                        <span class="tag">Maven</span>
+                        <span class="tag">Nexus / JFrog</span>
+                        <span class="tag">Jira / ServiceNow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+            
+            <div class="timeline">
+                <!-- Role 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="role-title">DevOps Engineer Intern</h3>
+                                <h4 class="company-name">DAREY.IO LLC — Wilmington, DE</h4>
+                            </div>
+                            <span class="role-date"><i class="far fa-calendar-alt"></i> Mar 2023 – Sept 2026</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Provisioned multi-AZ AWS infrastructure using Terraform and CloudFormation for 15+ microservices, cutting manual setup time by 40%.</li>
+                            <li>Built CI/CD pipelines using GitHub Actions and Jenkins, which significantly reduced release cycle times.</li>
+                            <li>Containerized 10+ applications using Docker and supported Kubernetes cluster deployments to ensure autoscaling during high-traffic periods.</li>
+                            <li>Automated routine Linux administration tasks using Python and Bash scripts, eliminating 15 hours of manual work weekly.</li>
+                            <li>Administered multi-node Linux servers across staging and production environments to maintain a 99.9% system uptime rate.</li>
+                            <li>Configured strict IAM policies, Security Groups, and automated patching pipelines to satisfy PCI-DSS and SOX operational compliance requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="role-title">System Engineer (Contract - Wells Fargo)</h3>
+                                <h4 class="company-name">PTR GLOBAL — Iselin, NJ</h4>
+                            </div>
+                            <span class="role-date"><i class="far fa-calendar-alt"></i> Nov 2024 – Apr 2025</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Administered and supported Linux and Windows systems, managing user accounts, permissions, file systems, software installation, patching, and configuration.</li>
+                            <li>Monitored system performance and availability, troubleshooting server, network, application, and connectivity issues to maintain reliable operations.</li>
+                            <li>Supported AWS infrastructure including EC2, VPC, IAM, S3, Security Groups, EBS, and CloudWatch for compute, storage, networking, and monitoring.</li>
+                            <li>Automated routine system administration tasks using Bash, PowerShell, and Python while supporting backups, security updates, patching, and incident resolution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle">Real-world cloud architecture and DevOps implementation projects.</p>
+
+            <div class="projects-grid">
+                <!-- Real Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abisoye07" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Multi-AZ AWS VPC & Compute Architecture</h3>
+                    <p class="project-desc">
+                        Provisioned fault-tolerant AWS networking infrastructure featuring VPCs, public/private subnets, NAT Gateways, ALB, and Auto Scaling Groups. Configured CloudWatch alarms for real-time operational visibility.
+                    </p>
+                    <div class="project-tags">
+                        <span>AWS VPC</span>
+                        <span>EC2</span>
+                        <span>ALB</span>
+                        <span>Auto Scaling</span>
+                        <span>CloudWatch</span>
+                    </div>
+                </div>
+
+                <!-- Real Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abisoye07" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Automated CI/CD & Microservices Pipeline</h3>
+                    <p class="project-desc">
+                        Designed end-to-end continuous integration and deployment workflows using Jenkins and GitHub Actions. Automated unit testing, Docker image creation, security vulnerability scanning, and cloud deployments.
+                    </p>
+                    <div class="project-tags">
+                        <span>Jenkins</span>
+                        <span>GitHub Actions</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <!-- Real Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fab fa-docker"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abisoye07" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">EKS Kubernetes Cluster & App Deployment</h3>
+                    <p class="project-desc">
+                        Containerized multi-tier applications with Docker and deployed them onto Amazon EKS. Managed Kubernetes manifests, pod autoscaling, ingress controllers, and service discovery for high traffic resilience.
+                    </p>
+                    <div class="project-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Amazon EKS</span>
+                        <span>ECR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="contact-lead">
+                    I am actively seeking AWS Cloud and DevOps Engineering roles. Feel free to connect with me on LinkedIn or review my code repositories on GitHub!
+                </p>
+                <div class="contact-buttons">
+                    <a href="https://linkedin.com/in/abisoyeoyefeso" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/Abisoye07" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                        <i class="fab fa-github"></i> View GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Abisoye Oyefeso. All rights reserved.</p>
+            <p class="footer-sub">Designed & Built with HTML, CSS, and Vanilla JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
